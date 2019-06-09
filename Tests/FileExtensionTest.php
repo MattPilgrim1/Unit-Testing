@@ -83,8 +83,19 @@ class FileExtensionTest extends TestCase
 
     public function testReturnUpperAndLowerCaseExtensionArray()
     {
-        $arrayReturn=File::Output();
+        $arrayReturn=File::arrayReturn();
 
         $this->assertTrue(is_array($arrayReturn));
+    }
+
+    public function testFilePutContentsResultIsComplete()
+    {
+        $this->assertEquals(File::Output(), 9642);
+    }
+
+    public function testOutput()
+    {
+
+        //var_dump();
     }
 }

@@ -14,14 +14,16 @@ class ShellScript implements OutputInterface
 
     public function makeDirectory($outputPath)
     {
-        return "mkdir " . $outputPath . "";
+        return  "mkdir " . $outputPath . "
+";
     }
 
     public function moveFile($originalPath, $outputPath, $extensionArray)
     {
         $ext = self::extensionArray($extensionArray);
 
-        return "find ".$originalPath. " -type f \( -iname \*.$ext \) -execdir mv -vn {} ".$outputPath." \;";
+        return "find ".$originalPath. " -type f \( -iname \*.$ext \) -execdir mv -vn {} ".$outputPath." \;
+";
     }
 
     public function extensionArray($extensionArray)
