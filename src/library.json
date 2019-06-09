@@ -1,0 +1,232 @@
+{
+    "text files": [
+        "doc",
+        "docx",
+        "log",
+        "msg",
+        "odt",
+        "pages",
+        "rtf",
+        "tex",
+        "txt",
+        "wpd",
+        "wps"
+    ],
+    "data files": [
+        "csv",
+        "dat",
+        "ged",
+        "key",
+        "keychain",
+        "pps",
+        "ppt",
+        "pptx",
+        "sdf",
+        "tar",
+        "tax2016",
+        "tax2018",
+        "vcf",
+        "xml"
+    ],
+    "audio files": [
+        "aif",
+        "iff",
+        "m3u",
+        "m4a",
+        "mid",
+        "mp3",
+        "mpa",
+        "wav",
+        "wma"
+    ],
+    "video files": [
+        "3g2",
+        "3gp",
+        "asf",
+        "avi",
+        "flv",
+        "m4v",
+        "mov",
+        "mp4",
+        "mpg",
+        "rm",
+        "srt",
+        "swf",
+        "vob",
+        "wmv"
+    ],
+    "3d image files": [
+        "3dm",
+        "3ds",
+        "max",
+        "obj"
+    ],
+    "raster image files": [
+        "bmp",
+        "dds",
+        "gif",
+        "heic",
+        "jpg",
+        "png",
+        "psd",
+        "pspimage",
+        "tga",
+        "thm",
+        "tif",
+        "tiff",
+        "yuv"
+    ],
+    "vector image files": [
+        "ai",
+        "eps",
+        "svg"
+    ],
+    "page layout files": [
+        "indd",
+        "pct",
+        "pdf"
+    ],
+    "spreadsheet files": [
+        "xlr",
+        "xls",
+        "xlsx"
+    ],
+    "database files": [
+        "accdb",
+        "db",
+        "dbf",
+        "mdb",
+        "pdb",
+        "sql"
+    ],
+    "executable files": [
+        "apk",
+        "app",
+        "bat",
+        "cgi",
+        "com",
+        "exe",
+        "gadget",
+        "jar",
+        "wsf"
+    ],
+    "game files": [
+        "b",
+        "dem",
+        "gam",
+        "nes",
+        "rom",
+        "sav"
+    ],
+    "cad files": [
+        "dwg",
+        "dxf"
+    ],
+    "gis files": [
+        "gpx",
+        "kml",
+        "kmz"
+    ],
+    "web files": [
+        "asp",
+        "aspx",
+        "cer",
+        "cfm",
+        "csr",
+        "css",
+        "dcr",
+        "htm",
+        "html",
+        "js",
+        "jsp",
+        "php",
+        "rss",
+        "xhtml"
+    ],
+    "plugin files": [
+        "crx",
+        "plugin"
+    ],
+    "font files": [
+        "fnt",
+        "fon",
+        "otf",
+        "ttf"
+    ],
+    "system files": [
+        "cab",
+        "cpl",
+        "cur",
+        "deskthemepack",
+        "dll",
+        "dmp",
+        "drv",
+        "icns",
+        "ico",
+        "lnk",
+        "sys"
+    ],
+    "settings files": [
+        "cfg",
+        "ini",
+        "prf"
+    ],
+    "encoded files": [
+        "hqx",
+        "mim",
+        "uue"
+    ],
+    "compressed files": [
+        "7z",
+        "cbr",
+        "deb",
+        "gz",
+        "pkg",
+        "rar",
+        "rpm",
+        "sitx",
+        "targz",
+        "zip",
+        "zipx"
+    ],
+    "disk image files": [
+        "bin",
+        "cue",
+        "dmg",
+        "iso",
+        "mdf",
+        "toast",
+        "vcd"
+    ],
+    "developer files": [
+        "c",
+        "class",
+        "cpp",
+        "cs",
+        "dtd",
+        "fla",
+        "h",
+        "java",
+        "lua",
+        "m",
+        "pl",
+        "py",
+        "sh",
+        "sln",
+        "swift",
+        "vb",
+        "vcxproj",
+        "xcodeproj"
+    ],
+    "backup files": [
+        "bak",
+        "tmp"
+    ],
+    "misc files": [
+        "crdownload",
+        "ics",
+        "msi",
+        "part",
+        "torrent"
+    ]
+}
