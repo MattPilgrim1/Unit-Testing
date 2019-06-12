@@ -7,19 +7,35 @@ use App\Models\Arrays;
 
 class FileExtensionTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        $this->testArrayFormat=[
+            'Documents'=>[
+                'doc',
+                'xls'
+            ]
+        ];
+
+        $this->fileDirectory = './src/';
+
+        $this->fileName = $this->fileDirectory .'library.json';
+
+        $this->array = ReturnFile::returnJSONFile($this->fileName);
+    }
+
     public function testDirectoryExists()
     {
-        $this->assertDirectoryExists('./src/');
+        $this->assertDirectoryExists($this->fileDirectory);
     }
 
     public function testFileExists()
     {
-        $this->assertFileExists('./src/library.json');
+        $this->assertFileExists($this->fileName);
     }
 
     public function testReturnedFileIsJSON()
     {
-        $jsonDecode = ReturnFile::returnJSONFile('./src/library.json');
+        $this->array;
 
         $jsonLastError = json_last_error() == JSON_ERROR_NONE;
 
@@ -28,27 +44,22 @@ class FileExtensionTest extends TestCase
 
     public function testReturnKindKeyFromArray()
     {
-        $jsonDecode = ReturnFile::returnJSONFile('./src/library.json');
-
-        foreach ($jsonDecode as $key => $value) {
+        foreach ($this->array as $key => $value) {
             $this->assertTrue(is_string($key));
         }
     }
 
     public function testReturnFileExtensionValueFromArray()
     {
-        $jsonDecode = ReturnFile::returnJSONFile('./src/library.json');
-
-        foreach ($jsonDecode as $fileExtension) {
+        foreach ($this->array as $fileExtension) {
             $this->assertTrue(is_array($fileExtension));
         }
     }
 
+
     public function testFileExtensionsAreInLowerCase()
     {
-        $jsonDecode = ReturnFile::returnJSONFile('./src/library.json');
-
-        $library = Arrays::returnArrayAsLowercase($jsonDecode);
+        $library = Arrays::returnArrayAsLowercase($this->array);
 
         foreach ($library as $fileKind => $extensionArray) {
             foreach ($extensionArray as $fileExtension) {
@@ -64,9 +75,7 @@ class FileExtensionTest extends TestCase
 
     public function testFileExtensionsAreAlsoReturnedUpperCase()
     {
-        $jsonDecode = ReturnFile::returnJSONFile('./src/library.json');
-
-        $library = Arrays::returnArrayAsUppercase($jsonDecode);
+        $library = Arrays::returnArrayAsUppercase($this->array);
 
         foreach ($library as $fileKind => $extensionArray) {
             foreach ($extensionArray as $fileExtension) {
@@ -80,15 +89,8 @@ class FileExtensionTest extends TestCase
         }
     }
 
-    public function testReturnUpperAndLowerCaseExtensionArray()
-    {
-        $arrayReturn=File::arrayReturn();
-
-        $this->assertTrue(is_array($arrayReturn));
-    }
-
     public function testFilePutContentsResultIsComplete()
     {
-        $this->assertEquals(File::Output(), 58625);
+        $this->assertEquals(File::Output(), 49058);
     }
 }

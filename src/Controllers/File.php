@@ -4,8 +4,8 @@ namespace App\Controllers;
 use App\Models\Arrays;
 use App\Models\ReturnFile;
 use App\Models\CreateFile;
-use App\Models\Powershell;
-use App\Models\ShellScript;
+use App\Models\CommandLine\Powershell;
+use App\Models\CommandLine\ShellScript;
 
 /**
  *
@@ -30,11 +30,15 @@ class File
             if (empty($recursive)) {
                 $createPresetFiles .= ShellScript::makeDirectory($outputLocation.$kind);
             }
-            $outputPath=$outputLocation.$kind."/".$recursive;
 
-            $makeDirectory.=ShellScript::makeDirectory($outputPath);
 
-            $moveFile.=ShellScript::moveFile($inputLocation, $outputPath, $extensionArray);
+            if (isset($recursive)) {
+                $outputPath=$outputLocation.$kind."/".$recursive;
+
+                $makeDirectory.=ShellScript::makeDirectory($outputPath);
+
+                $moveFile.=ShellScript::moveFile($inputLocation, $outputPath, $extensionArray);
+            }
         }
 
         return $createPresetFiles. $makeDirectory . $moveFile;

@@ -1,7 +1,8 @@
 <?php
-namespace App\Models;
+namespace App\Models\CommandLine;
 
 use App\Interfaces\OutputInterface;
+use App\Models\Arrays;
 
 /**
  *
@@ -20,18 +21,9 @@ class ShellScript implements OutputInterface
 
     public function moveFile($originalPath, $outputPath, $extensionArray)
     {
-        $ext = self::extensionArray($extensionArray);
+        $ext = Arrays::joinArray($extensionArray, " -o -iname \\*.");
 
         return "find ".$originalPath. " -type f \( -iname \*.$ext \) -execdir mv -vn {} ".$outputPath." \;
 ";
-    }
-
-    public function extensionArray($extensionArray)
-    {
-        if (empty($extensionArray)) {
-            return null;
-        }
-
-        return join($extensionArray, " -o -iname \\*.");
     }
 }
