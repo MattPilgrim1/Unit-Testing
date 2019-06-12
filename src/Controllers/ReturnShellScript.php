@@ -4,25 +4,18 @@ namespace App\Controllers;
 use App\Models\Arrays;
 use App\Models\ReturnFile;
 use App\Models\CreateFile;
-use App\Models\CommandLine\Powershell;
 use App\Models\CommandLine\ShellScript;
 
 /**
  *
  */
-class File
+class ReturnShellScript extends ScriptConstructor
 {
-    public function arrayReturn()
-    {
-        $jsonFile = ReturnFile::returnJSONFile('./src/library.json');
+    public $inputLocation;
+    public $outputLocation;
+    public $recursive;
 
-        return array_merge_recursive(
-            Arrays::returnArrayAsUppercase($jsonFile),
-            Arrays::returnArrayAsLowercase($jsonFile)
-        );
-    }
-
-    public function shellScript($inputLocation, $outputLocation, $recursive)
+    public function script($inputLocation, $outputLocation, $recursive)
     {
         $moveFile=$makeDirectory=$createPresetFiles=null;
 
@@ -44,7 +37,7 @@ class File
         return $createPresetFiles. $makeDirectory . $moveFile;
     }
 
-    public function Output()
+    public function output()
     {
         $inputLocation = "/Users/matt/Desktop/";
         $outputLocation="/Users/matt/Public/";
@@ -53,10 +46,10 @@ class File
         /*
          * Create Sub Directories into the output location
         */
-        $shellScriptArray=self::shellScript($inputLocation, $outputLocation, null);
+        $shellScriptArray=self::script($inputLocation, $outputLocation, null);
 
         for ($i=1; $i <= 5; $i++) {
-            $shellScriptArray.=self::shellScript($inputLocation, $outputLocation, $i);
+            $shellScriptArray.=self::script($inputLocation, $outputLocation, $i);
         }
 
 

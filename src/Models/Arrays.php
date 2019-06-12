@@ -57,6 +57,10 @@ class Arrays
             return null;
         }
 
+        if (is_string($array)) {
+            return $array;
+        }
+
         return join($array, $joinVariable);
     }
 }

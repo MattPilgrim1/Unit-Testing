@@ -1,13 +1,12 @@
 <?php
 namespace App\Models\CommandLine;
 
-use App\Interfaces\OutputInterface;
 use App\Models\Arrays;
 
 /**
  *
  */
-class ShellScript implements OutputInterface
+class ShellScript
 {
     public $outputPath;
     public $extensionArray;

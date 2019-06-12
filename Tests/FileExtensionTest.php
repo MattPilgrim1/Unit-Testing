@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-use App\Controllers\File;
+use App\Controllers\ReturnShellScript;
 use App\Models\ReturnFile;
 use App\Models\Arrays;
 
@@ -91,6 +91,6 @@ class FileExtensionTest extends TestCase
 
     public function testFilePutContentsResultIsComplete()
     {
-        $this->assertEquals(File::Output(), 49058);
+        $this->assertEquals(ReturnShellScript::output(), 49058);
     }
 }
