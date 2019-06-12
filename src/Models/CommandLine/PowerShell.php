@@ -15,13 +15,15 @@ class PowerShell
 
     public function makeDirectory($outputPath)
     {
-        return 'New-Item -Path "'.$outputPath.'" -ItemType "directory"';
+        return 'New-Item -Path "'.$outputPath.'" -ItemType "directory"
+';
     }
 
     public function moveFile($originalPath, $outputPath, $extensionArray)
     {
         $ext = Arrays::joinArray($extensionArray, "', '*.");
 
-        return "Get-ChildItem $originalPath\* -Include ('*.$ext') -Recurse | Move-Item -Destination '".$outputPath."' ";
+        return "Get-ChildItem $originalPath\* -Include ('*.$ext') -Recurse | Move-Item -Destination '".$outputPath."'
+";
     }
 }

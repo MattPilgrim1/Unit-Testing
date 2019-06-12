@@ -1,3 +1,2 @@
 /vendor
-/Output/*.sh
-/Demo/*.sh
+/Output/*.*

@@ -5,7 +5,7 @@ use App\Models\Arrays;
 use App\Models\ReturnFile;
 use App\Models\CreateFile;
 use App\Models\CommandLine\ShellScript;
-
+use App\Models\CommandLine\PowerShell;
 /**
  *
  */
@@ -13,10 +13,10 @@ class ReturnShellScript extends ScriptConstructor
 {
     public function output()
     {
-        $inputLocation = "/Users/matt/Desktop/";
-        $outputLocation="/Users/matt/Public/";
+        $inputLocation = "D:/Downloads/";
+        $outputLocation="D:/Sorted/";
         $recursive=5;
-        $scriptType = new ShellScript;
+        $scriptType = new PowerShell;
 
         /*
          * Create Sub Directories into the output location
@@ -28,6 +28,6 @@ class ReturnShellScript extends ScriptConstructor
         }
 
 
-        return CreateFile::unformatted('Demo/run.sh', $shellScriptArray);
+        return CreateFile::unformatted('Output/run.ps1', $shellScriptArray);
     }
 }
