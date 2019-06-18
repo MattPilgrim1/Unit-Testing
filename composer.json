@@ -8,8 +8,5 @@
     "authors": [{
         "name": "Matthew Pilgrim",
         "email": "mattpilgrim@live.co.uk"
-    }],
-    "require": {
-        "phpunit/phpunit": "^8.2"
-    }
+    }]
 }

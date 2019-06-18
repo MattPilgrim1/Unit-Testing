@@ -18,4 +18,20 @@ class CreateFile
     {
         return file_put_contents($filename, $contents);
     }
+
+    public function json($filename, $contents)
+    {
+        $contents = json_encode($contents);
+
+        return self::unformatted($filename, $contents);
+    }
+
+    public function directory($filepath)
+    {
+        if(is_dir($filepath)){
+            return false;
+        }
+
+        return mkdir($filepath, 0777, true);
+    }
 }

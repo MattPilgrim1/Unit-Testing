@@ -1,5 +1,5 @@
 {
-    "Text_Files": [
+    "Text Files": [
         "doc",
         "docx",
         "log",
@@ -12,7 +12,7 @@
         "wpd",
         "wps"
     ],
-    "Data_Files": [
+    "Data Files": [
         "csv",
         "dat",
         "ged",
@@ -28,7 +28,7 @@
         "vcf",
         "xml"
     ],
-    "Audio_Files": [
+    "Audio Files": [
         "aif",
         "iff",
         "m3u",
@@ -39,7 +39,7 @@
         "wav",
         "wma"
     ],
-    "Video_Files": [
+    "Video Files": [
         "3g2",
         "3gp",
         "asf",
@@ -55,13 +55,13 @@
         "vob",
         "wmv"
     ],
-    "3D_Image_Files": [
+    "3D Image Files": [
         "3dm",
         "3ds",
         "max",
         "obj"
     ],
-    "Raster_Image_Files": [
+    "Raster Image Files": [
         "bmp",
         "dds",
         "gif",
@@ -76,22 +76,22 @@
         "tiff",
         "yuv"
     ],
-    "Vector_Image_Files": [
+    "Vector Image Files": [
         "ai",
         "eps",
         "svg"
     ],
-    "Page_Layout_Files": [
+    "Page Layout Files": [
         "indd",
         "pct",
         "pdf"
     ],
-    "Spreadsheet_Files": [
+    "Spreadsheet Files": [
         "xlr",
         "xls",
         "xlsx"
     ],
-    "Database_Files": [
+    "Database Files": [
         "accdb",
         "db",
         "dbf",
@@ -99,7 +99,7 @@
         "pdb",
         "sql"
     ],
-    "Executable_Files": [
+    "Executable Files": [
         "apk",
         "app",
         "bat",
@@ -110,7 +110,7 @@
         "jar",
         "wsf"
     ],
-    "Game_Files": [
+    "Game Files": [
         "b",
         "dem",
         "gam",
@@ -118,16 +118,16 @@
         "rom",
         "sav"
     ],
-    "Cad_Files": [
+    "Cad Files": [
         "dwg",
         "dxf"
     ],
-    "Gis_Files": [
+    "Gis Files": [
         "gpx",
         "kml",
         "kmz"
     ],
-    "Web_Files": [
+    "Web Files": [
         "asp",
         "aspx",
         "cer",
@@ -143,17 +143,17 @@
         "rss",
         "xhtml"
     ],
-    "Plugin_Files": [
+    "Plugin Files": [
         "crx",
         "plugin"
     ],
-    "Font_files": [
+    "Font files": [
         "fnt",
         "fon",
         "otf",
         "ttf"
     ],
-    "System_Files": [
+    "System Files": [
         "cab",
         "cpl",
         "cur",
@@ -166,17 +166,17 @@
         "lnk",
         "sys"
     ],
-    "Settings_Files": [
+    "Settings Files": [
         "cfg",
         "ini",
         "prf"
     ],
-    "Encoded_Files": [
+    "Encoded Files": [
         "hqx",
         "mim",
         "uue"
     ],
-    "Compressed_Files": [
+    "Compressed Files": [
         "7z",
         "cbr",
         "deb",
@@ -189,7 +189,7 @@
         "zip",
         "zipx"
     ],
-    "Disk_Image_Files": [
+    "Disk Image Files": [
         "bin",
         "cue",
         "dmg",
@@ -198,7 +198,7 @@
         "toast",
         "vcd"
     ],
-    "Developer_Files": [
+    "Developer Files": [
         "c",
         "class",
         "cpp",
@@ -218,11 +218,11 @@
         "vcxproj",
         "xcodeproj"
     ],
-    "Backup_Files": [
+    "Backup Files": [
         "bak",
         "tmp"
     ],
-    "Misc_Files": [
+    "Misc Files": [
         "crdownload",
         "ics",
         "msi",

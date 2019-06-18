@@ -15,6 +15,21 @@ class ReturnFile
     {
         $fileGetContents = file_get_contents($filename);
 
-        return json_decode($fileGetContents);
+        return json_decode($fileGetContents,true);
+    }
+
+    public function json($filename)
+    {
+        $fileGetContents = file_get_contents($filename);
+
+        return json_decode($fileGetContents,true);
+    }
+
+
+    public function returnCSVFile($filename)
+    {
+        $fileGetContents = file_get_contents($filename);
+
+        return array_map('str_getcsv', file($fileGetContents));
     }
 }
