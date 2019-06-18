@@ -16,6 +16,11 @@ class CreateFile
      */
     public function unformatted($filename, $contents)
     {
+        if(file_exists($filename)){
+
+            return false;
+
+        }
         return file_put_contents($filename, $contents);
     }
 
